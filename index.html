@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <a id="df" href="#definition">Definition</a>
+        <a id="r" href="#rule">Rule based</a>
+        <a id="t" href="#types">Machine learning</a>
+        <a id="d" href="#deep">Deep learning</a>
+    </nav>
+    <section id="intro">
+        <img id="introimg" src="" alt="">
+        <div id="AI0">
+        <h1 id="AI">ARTIFICIAL INTELLIGENCE</h1>
+        <p id="AI2">a possible future?</p>
+        </div>
+    </section>
+    
+    <section id="definition">
+        <hr id="hr1"><h1 id="whatisai">WHAT IS ARTIFICIAL INTELLIGENCE?</h1><hr id="hr2">
+        <div id="border">
+        <p id="def">Artificial intelligence (AI) is the ability of computer systems and software to perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and decision-making.</p>
+        <p id="question">But how does it actually work?</p>
+        </div>
+    </section>
+    <section id="thehow">
+        <h3 id="h3">Three ways:</h3>
+        <div id="ways">
+        <p id="rb">Rule based</p>
+        <p id="ml">Machine learning</p>
+        <p id="dl">Deep learning</p>
+        </div>
+        <p id="tx">click the way you want to check it out.</p>
+    </section>
+    <section id="rule">
+        <div id="aism">
+            <hr id="hr1"><h1 id="whatisai">Rules based</h1><p id="op">Or check out <span id="op1" onclick="mlfun()">machine learning</span> and <span id="op2" onclick="dlfun()">deep learning</span>.</p><hr id="hr2">
+        <img id="aiimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWsOhHia3IneW2GUPebgF08FYUM4W4_I2k4kM8yRxxhRmHbt0_recp9HI&s=10" alt="example">
+        <p id="rbdef">Rule-Based AI is a type of artificial intelligence that makes decisions by following predefined rules created by humans, usually in the form of IF–THEN statements. As shown in the image above, the AI-powered chatbot can understand different ways of expressing a request and respond accordingly, while the rule-based chatbot follows specific predefined options. When a user makes an unexpected request, it may fail to understand and redirect them to the available options or a human agent. You can find an example of it in the <span id="section">types of machine learning</span> section in this website.</p>
+        </div>
+    </section>
+    <section id="types">
+        <div id="all">
+            <hr id="hr3"><h1 id="whatisai2">Machine learning</h1><p id="op">Or check out <span id="op1" onclick="rbfun()">rule based</span> and <span id="op2" onclick="dlfun()">deep learning</span>.</p><p id="op">click the option you want to unlock its description right away</p><hr id="hr2">
+        <p id="mldef">Machine learning (ML) is a subset of artificial intelligence (AI) that trains computer software (called a <span id="model">model</span>) to learn patterns from <span id="data">data</span> and make predictions or decisions without needing hard-coded, step-by-step rules. ML has 3 main types, and they are the following:</p>
+        <div id="type">
+            <div id="div1"> 
+            <div id="type1"><p id="num1">01</p>
+            <div id="supervised">
+                <p id="ml1">Supervised learning</p>
+            </div></div></div>
+            <div id="div2">
+            <div id="type2"><p id="num2">02</p>
+            <div id="unsupervised">
+                <p id="ml2">Unsupervised learning</p>
+            </div></div>
+            </div>
+            <div id="div3">
+            <div id="type3"><p id="num3">03</p>
+            <div id="reinforcement">
+                <p id="ml3">Reinforcement learning</p>
+            </div></div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <section id="sl">
+        <h3 id="header">Supervised Learning</h3>
+        <p id="options">Check out <span id="span1" onclick="unsupervised()">unsupervised learning</span> or <span id="span2" onclick="reinforcement()">reinforcement learning</span></p>
+        <div class="back">
+              <div id="backsl">
+                <img id="pfp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAACUCAMAAADbGilTAAAAM1BMVEXl5uivtLirsbXd4eLo6evZ296ttLqprrO+wsa0ubzg4uTT1tnDx8rW2dvLztG7wMPm6ObY/l0dAAAEJElEQVR4nO2cUXLrIAwADZbBgIHc/7QPnLRN8pwEEBZkhv3s9GNHFQIj0WkaDAaDwWAwGAwGg8HgBCDQ2uEz0VIv1hg7656Ng9hiPJNScrkjNjPvP+4NmBbnOefsDi6Zd0tv0QVYPHsUvelyti5dyQbTA89fXa+7sQW9HYX03tZ1YgtGvTXdbVUXiQDbR9Md11p0mvTKhUhx5Vtz1TeL6lnWN06Dz6n6ixBrS1OdobpHtqHrmqUac7ZVGqRWgHtZ00YWjMxVDbSps1oVqHKlW7jmZ8Au6xoE1sqkLeA/JH1gIa9c3UG+JYAtWVgRwSy1bMnCukJ9MABTlqxXiOtWWRH4CSypq0ZENciSuhpEWJmQllAV0k+th6yEgYXSgnVD0alORaeWe+gqAWxIVUZ3KIDyjeAK5XaAdiX7mIEZqRoWF9VhCyzedaFyRe0EV8hcHVqVUe1cFVz5cD1yRecrN1/kOnLgwPWbatY37QVftMeW3WTdwz2Z6zedCQsuXp8gPGujv2EIr4y/6dsQmbCc8pt7wu2ykrRrgKuwkvbuLbdbdA/x3RvyTpNSFbV1cepWJ7jyO3jyflx52aJvykJxz6hF57CsFLRpHy9f1OMsOsE0a3QX9ORbdGOv5LYNaA8tj8xZKSuazpBATp9LCLqvrGPZ9HZ3iGrboSdIHtDia/OZwkvintB+7C0CjvH3260QXDWqq8/Asr7fFTjfuhjTjMBk2CtbIZhUlL3ij1wuRrEXees7+fP/EWK7qafZ8jj+vNneZssjMM1287d5/QjzzuoeZ/ZvwKQX45wzNmr263l9tvFAa6FDopcOITUxqFtgj+2idWePY+ITGLf6nzMXD0vqb40pvznTQ9bGYAZNxeVzBXgoBmGZqc0sDY1DOK2LL0tSzgPxt3zwbZIPAGZVh09g3giHjHCaVvcyzWaVZbdvXCpHlwzx9ZOSH45WrxFcss2Q2ALYsJZQY297MrgJLiebTrZ4RvcRztypX1/hfOKxHZhH27MyIfz1vagT1B9b5c4pCvFFWU3RK+qEgWiY3KuzNA5Z/fMWZkwz4x3VPxvBnCN6o+IUf8hUmfb2rQghRLWsffugtBZ1XiPCcrooq3UxW2EQJ0kW3/WqMTuYKIt9nVxhbCxDFnf4IlQNBQFzl0wZVYa7o68wM5aJLG3UVRgZy0WUlq7Mh7qVKDscnHEE/ExJD7TGMGYJJe06XfyhipXNT9m1jWlYX9lZYFmjsIZakFu4CI6BL+FZc0ZgG6pm/gMI9IArCsHndFlYWoaVZb1HhLXVwvohPWOLpm5qwpM/v4iPgkeu6R80Z91bZMimJgHuAXQd19SNFj05XsE1sRLgJ/IrkDh6XP7fJWq6ph1gsAP5VUgdP+/BNXFxLT24pm2zYGJztTkqLQfmHmg6zjfolX/5GjkXPR8uFAAAAABJRU5ErkJggg==" alt="profile">
+                <div id="userqs"></div>
+                <ul id="qs">
+                <li id="qs1">what is supervised learning?</ol>
+                <li id="qs2">why are these models useful?</ol>
+                </ul>
+              </div>
+              <div id="botqs">
+                <div id="botstuff">
+                <p id="botname">Google's GNMT</p>
+                <p id="answer">Choose a question for me to answer.</p>
+                </div>
+                <img id="logo" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/250px-Google_Translate_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="google translate pic">
+            
+              </div>
+        </div>  
+        </div>
+        <p id="tx">choose the question you want for the bot to answer.</p>       
+        
+    </section>
+    <section id="deep">
+        <div id="all2">
+        <hr id="hr3"><h1 id="whatisai2">Deep learning</h1><p id="op">Or check out <span id="op1" onclick="rbfun()">rule based</span> and <span id="op2" onclick="mlfun()">machine learning</span>.</p><p id="op">click the option you want for it to open and double click it to close it.</p><hr id="hr2">
+        <p id="mldef">Deep learning is a branch of machine learning that uses artificial neural networks with multiple layers to learn complex patterns from large amounts of data.</p>
+        <div id="divs">
+        <div id="waysdl1"><p class="ways1" id="way1">CNN (Convolutional Neural Network)</p><p id="info1">.</p></div>
+        <div id="waysdl2"><p class="ways1" id="way2">RNN (Recurrent Neural Network)</p><p id="info2">.</p></div>
+        <div id="waysdl3"><p class="ways2" id="way3">Transformers</p><p id="info3">.</p></div>
+        <div id="waysdl4"><p class="ways1" id="way4">GANs (Generative Adversarial Networks)</p><p id="info4">.</p></div>
+        <div id="waysdl5"><p class="ways2" id="way5">Autoencoders</p><p id="info5">.</p></div>
+        </div>
+        </div>
+    </section>
+
+<p id="direc">click on one to start</p>
+<footer>
+    <div id="res">
+    <p id="pelem">check out these websites for more info:</p>
+    <ul id="opts">
+        <li><a class="link" href="https://course.elementsofai.com/">elements of ai</a></li>
+        <li><a class="link" href="https://developers.google.com/machine-learning/intro-to-ml/what-is-ml?">google for developers</a></li>
+        <li><a class="link" href="https://www.ibm.com/think/topics/deep-learning?mhq=what+is+deep+learning&mhsrc=ibmsearch">IBM</a></li>
+        <li><a class="link" href="https://hai.stanford.edu/ai-definitions/what-is-an-expert-system?">Stanford HAI</a> </li>
+        <li> or check out <a href="chatgbt.com">chat gbt</a> for quick info.</li>
+    </ul>
+    </div>
+    <p id="quote">Will we lead ai for a better future, or will it start lead us to an unknown one instead?</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
