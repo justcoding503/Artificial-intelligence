@@ -309,3 +309,7 @@ function mouseyfun(event){
     const y = event.clientY;
     direc.style.transform= "translate("+(x+15)+'px, '+(y+15)+'px)';
 }
+
+window.addEventListener("load", function(){
+    document.getElementById("preloader").style.display="none";
+})
