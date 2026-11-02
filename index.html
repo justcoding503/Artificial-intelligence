@@ -8,7 +8,6 @@
     
 </head>
 <body>
-    <div id="preloader"></div>
     <nav>
         <a id="df" href="#definition">Definition</a>
         <a id="r" href="#rule">Rule based</a>
@@ -33,9 +32,9 @@
     <section id="thehow">
         <h3 id="h3">Three ways:</h3>
         <div id="ways">
-        <p id="rb">Rule based</p>
-        <p id="ml">Machine learning</p>
-        <p id="dl">Deep learning</p>
+        <p id="rb" onclick="rbfun()">Rule based</p>
+        <p id="ml" onclick="mlfun()">Machine learning</p>
+        <p id="dl" onclick="dlfun()">Deep learning</p>
         </div>
         <p id="tx">click the way you want to check it out.</p>
     </section>
@@ -53,16 +52,16 @@
         <div id="type">
             <div id="div1"> 
             <div id="type1"><p id="num1">01</p>
-            <div id="supervised">
+            <div id="supervised" onclick="supervised()">
                 <p id="ml1">Supervised learning</p>
             </div></div></div>
-            <div id="div2">
+            <div id="div2" onclick="unsupervised()">
             <div id="type2"><p id="num2">02</p>
             <div id="unsupervised">
                 <p id="ml2">Unsupervised learning</p>
             </div></div>
             </div>
-            <div id="div3">
+            <div id="div3" onclick="reinforcement()">
             <div id="type3"><p id="num3">03</p>
             <div id="reinforcement">
                 <p id="ml3">Reinforcement learning</p>
@@ -102,11 +101,11 @@
         <hr id="hr3"><h1 id="whatisai2">Deep learning</h1><p id="op">Or check out <span id="op1" onclick="rbfun()">rule based</span> and <span id="op2" onclick="mlfun()">machine learning</span>.</p><p id="op">click the option you want for it to open and double click it to close it.</p><hr id="hr2">
         <p id="mldef">Deep learning is a branch of machine learning that uses artificial neural networks with multiple layers to learn complex patterns from large amounts of data.</p>
         <div id="divs">
-        <div id="waysdl1"><p class="ways1" id="way1">CNN (Convolutional Neural Network)</p><p id="info1">.</p></div>
-        <div id="waysdl2"><p class="ways1" id="way2">RNN (Recurrent Neural Network)</p><p id="info2">.</p></div>
-        <div id="waysdl3"><p class="ways2" id="way3">Transformers</p><p id="info3">.</p></div>
-        <div id="waysdl4"><p class="ways1" id="way4">GANs (Generative Adversarial Networks)</p><p id="info4">.</p></div>
-        <div id="waysdl5"><p class="ways2" id="way5">Autoencoders</p><p id="info5">.</p></div>
+        <div id="waysdl1" onclick="waysdl1fun()" ondblclick="goback()"><p class="ways1" id="way1">CNN (Convolutional Neural Network)</p><p id="info1">.</p></div>
+        <div id="waysdl2" onclick="waysdl2fun()" ondblclick="goback2()"><p class="ways1" id="way2">RNN (Recurrent Neural Network)</p><p id="info2">.</p></div>
+        <div id="waysdl3" onclick="waysdl3fun()" ondblclick="goback3()"><p class="ways2" id="way3">Transformers</p><p id="info3">.</p></div>
+        <div id="waysdl4" onclick="waysdl4fun()" ondblclick="goback4()"><p class="ways1" id="way4">GANs (Generative Adversarial Networks)</p><p id="info4">.</p></div>
+        <div id="waysdl5" onclick="waysdl5fun()" ondblclick="goback5()"><p class="ways2" id="way5">Autoencoders</p><p id="info5">.</p></div>
         </div>
         </div>
     </section>

@@ -187,7 +187,8 @@ function dlfun(){
         behavior: "smooth"
     });
 }
-waysdl1.addEventListener("click", function(){
+waysdl1.addEventListener("click", waysdl1fun)
+function waysdl1fun(){
     waysdl1.style.borderRadius="30px";
     waysdl1.style.width="350px";
     waysdl1.style.zIndex=9999;
@@ -196,8 +197,9 @@ waysdl1.addEventListener("click", function(){
     info1.innerHTML="Mainly used to analyze images, detects features such as edges, shapes, and objects.";
     way1.style.fontWeight=900;
     way1.style.marginTop="50px";
-})
-waysdl2.addEventListener("click", function(){
+}
+waysdl2.addEventListener("click", waysdl2fun)
+function waysdl2fun(){
     waysdl2.style.borderRadius="30px";
     waysdl2.style.width="350px";
     waysdl2.style.zIndex=9999;
@@ -206,8 +208,9 @@ waysdl2.addEventListener("click", function(){
     info2.innerHTML="Used for sequential data, uses information from previous steps to understand what comes next.";
     way2.style.fontWeight=900;
     way2.style.marginTop="50px";
-})
-waysdl3.addEventListener("click", function(){
+}
+waysdl3.addEventListener("click", waysdl3fun)
+function waysdl3fun(){
     waysdl3.style.borderRadius="30px";
     waysdl3.style.width="350px";
     waysdl3.style.zIndex=9999;
@@ -216,8 +219,9 @@ waysdl3.addEventListener("click", function(){
     info3.innerHTML="Designed to understand relationships between elements in data, especially words in sentences, uses a mechanism called attention.";
     way3.style.fontWeight=900;
     way3.style.marginTop="60px";
-})
-waysdl4.addEventListener("click", function(){
+}
+waysdl4.addEventListener("click", waysdl4fun)
+function waysdl4fun(){
     waysdl4.style.borderRadius="30px";
     waysdl4.style.width="350px";
     waysdl4.style.zIndex=9999;
@@ -226,8 +230,9 @@ waysdl4.addEventListener("click", function(){
     info4.innerHTML="Consist of two neural networks competing against each other, one generates new data, while the other evaluates whether it looks real.";
     way4.style.fontWeight=900;
     way4.style.marginTop="20px";
-})
-waysdl5.addEventListener("click", function(){
+}
+waysdl5.addEventListener("click", waysdl5fun)
+function waysdl5fun(){
     waysdl5.style.borderRadius="30px";
     waysdl5.style.width="350px";
     waysdl5.style.zIndex=9999;
@@ -236,7 +241,7 @@ waysdl5.addEventListener("click", function(){
     info5.innerHTML="Learn to compress data and reconstruct it, help remove noise and extract important features.";
     way5.style.fontWeight=900;
     way5.style.marginTop="60px";
-})
+}
 waysdl1.addEventListener("dblclick", goback);
 function goback(){
     waysdl1.style.borderRadius="50%";
@@ -302,14 +307,5 @@ function rbfun(){
         behavior:"smooth"
     });
 };
-const direc = document.getElementById("direc");
- 
-function mouseyfun(event){
-    const x = event.clientX;
-    const y = event.clientY;
-    direc.style.transform= "translate("+(x+15)+'px, '+(y+15)+'px)';
-}
 
-window.addEventListener("load", function(){
-    document.getElementById("preloader").style.display="none";
-})
+
